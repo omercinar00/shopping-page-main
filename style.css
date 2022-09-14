@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border:1px solid black; */
+  font-family: Kumbh Sans, sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.container nav {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgb(202, 201, 200);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  /* border: 3px solid red; */
+  justify-content: space-around;
+  padding: 0 3rem;
+  font-size: large;
+}
+.nav1 h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.nav1 ul {
+  display: flex;
+  /* border: 2px solid blue; */
+  width: 100%;
+  justify-content: space-around;
+}
+.close {
+  display: none;
+}
+
+.nav1 li a {
+  text-decoration: none;
+  color: rgb(131, 128, 128);
+  padding: 2.4rem 0;
+  /* transition-property: border-bottom;
+    transition-duration: 1s; */
+}
+.nav1 li a:hover {
+  border-bottom: 3px solid orangered;
+  transition: border-bottom 1s;
+}
+
+.nav1 li {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+.hamb {
+  display: none;
+}
+
+.nav2 {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 2px solid red; */
+  gap: 0 1rem;
+  position: relative;
+}
+
+.nav2 a img {
+  height: 1.3rem;
+  /* padding: 0 1rem; */
+}
+.user:hover {
+  border: 2px solid orangered;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.sec1 {
+  width: 30rem;
+}
+
+.left img {
+  width: 30rem;
+  border-radius: 20px;
+}
+
+.left2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left2 img {
+  margin-top: 10px;
+  width: 6rem;
+  border-radius: 20px;
+}
+.left2 img:hover {
+  border: 2px solid orangered;
+  opacity: 0.7;
+}
+.sec2 {
+  width: 50rem;
+  padding: 5rem 5em;
+  /* line-height: 1rem; */
+  font-size: 1.4rem;
+}
+
+.sec2 h4 {
+  color: coral;
+}
+
+.sec2 h1 {
+  font-size: 3rem;
+}
+
+.sec2 h1 {
+  margin-top: 2rem;
+}
+.sec2 .par {
+  margin-top: 2rem;
+}
+.sec2 h4 {
+  margin-top: 2rem;
+}
+
+.sec2 p {
+  /* border: 2px solid red; */
+  font-size: 1rem;
+  color: rgb(114, 111, 111);
+  margin-top: 1rem;
+}
+.sec2 .money {
+  color: black;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.money span {
+  color: orangered;
+  background-color: #ffede0;
+  padding: 0.4rem;
+  font-size: medium;
+  border-radius: 7px;
+  margin-left: 1rem;
+}
+
+.pay {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.pay .leftside {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f7f8fd;
+  border-radius: 5px;
+}
+
+.leftside img {
+  /* border: 1px solid red; */
+  width: 1rem;
+  cursor: pointer;
+}
+
+.pay button {
+  width: 60%;
+  background-color: #fda25c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 
+.pay button img{
+    fill:white;
+    color: #F7F8FD;
+    margin-right: 1rem;
+} */
+
+.pay button i {
+  margin-right: 1.4rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sec2 {
+    width: 40rem;
+  }
+  .container {
+    position: relative;
+  }
+  .container nav {
+    padding: 0 0;
+  }
+  .nav1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    /* position: relative; */
+  }
+  .nav1 .hamb {
+    display: inline;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .nav1 ul {
+    /* visibility: hidden; */
+    /* flex-direction: column; */
+    width: 30vw;
+    background-color: rgb(255, 102, 0);
+    height: 45vh;
+    position: absolute;
+    left: -15rem;
+    top: 4.5rem;
+  }
+  .nav1 ul li a {
+    padding: 0 0;
+  }
+  .hambclick ~ .ul {
+    background-color: rgb(247, 235, 226);
+    border-radius: 20px;
+    position: absolute;
+    left: -2.5rem;
+    transition: all 2s;
+  }
+   .hamb ~ .ul {
+    background-color: rgb(247, 235, 226);
+    border-radius: 20px;
+    position: absolute;
+    transition: all 2s;
+  }
+
+
+  .nav1 ul {
+    flex-direction: column;
+  }
+  .close {
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem 2rem;
+  }
+}
+.sepet{
+  position: relative;
+  z-index: 3;
+}
+.sepetsayi{
+  position: absolute;
+  z-index: 2;
+  /* border: 1px solid #fda25c; */
+  border-radius: 100px;
+  background-color: #fda25c;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  text-align: center;
+  right: 55px;
+  top:13px;
+  font-size: 10px;
+
+}
+.sepetkart{
+  /* display: flex; */
+  justify-content:space-evenly;
+  align-items: center;
+  width: 30rem;
+  border: 2px solid red;
+  position: absolute;
+  top: 5rem;
+  right:-12rem;
+  background-color: white;
+}
+.sepettekiler{
+  height: 7rem;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}

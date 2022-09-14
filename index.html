@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          
+          <div class="nav1">
+            <img class="hamb " src="./images/icon-menu.svg" alt="">
+            <h1>sneakers</h1>
+            <ul class="ul">
+              <img class="close" src="./images/icon-close.svg" alt="">
+              <li><a href="">Collections</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            
+            </ul>
+          </div>
+          <div class="nav2">
+            <a href=""><img class="sepet" src="./images/icon-cart.svg" alt="" /><sup id="sepetsayi"></sup></a>
+            <div class="sepetkart">
+                <p>Cart</p>
+                <hr>
+                <div class="sepettekiler">
+                  <p>Your Cart is empty !</p>
+              </div>
+              </div>
+            <a href="">
+              <img
+                class="user"
+                style="height: 2.8rem"
+                src="./images/image-avatar.png"
+                alt=""
+            /></a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="sec1">
+          <div class="left">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="left2">
+            <a href=""
+              ><img src="./images/image-product-1-thumbnail.jpg" alt=""
+            /></a>
+            <a href=""
+              ><img src="./images/image-product-2-thumbnail.jpg" alt=""
+            /></a>
+            <a href=""
+              ><img src="./images/image-product-3-thumbnail.jpg" alt=""
+            /></a>
+            <a href=""
+              ><img src="./images/image-product-4-thumbnail.jpg" alt=""
+            /></a>
+          </div>
+        </section>
+        <section class="sec2">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Sneakers</h1>
+          <p class="par">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <h4 class="money">$125.00 <span>50%</span></h4>
+          <p><del> $250.00</del></p>
+          <div class="pay">
+            <div class="leftside">
+              <img class="eksi" src="./images/icon-minus.svg" alt="" />
+              <span class="adet">1</span>
+              <img class="artı" src="./images/icon-plus.svg" alt="" />
+            </div>
+            <button id="sepetekle">
+               <i class="fa-solid fa-cart-shopping"></i> Add to
+              cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
